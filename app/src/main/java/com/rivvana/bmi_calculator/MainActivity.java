@@ -39,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             BMIresult = "under Weight";
         }else if (bmi >= 15.5 && bmi <= 24.9){
             BMIresult = "Normal Heigth";
-        }else if ()
+        }else if (bmi >= 23 && bmi <= 29.9){
+            BMIresult = "Overweight";
+        }else {
+            BMIresult = "Obese";
+        }
+
+        calculation = "Result:\n\n" + bmi + "\n" + BMIresult;
+
+        resultText.setText(calculation);
     }
 }
